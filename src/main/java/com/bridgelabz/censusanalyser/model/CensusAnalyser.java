@@ -21,7 +21,7 @@ public class CensusAnalyser {
                     .withType(IndiaCensusCSV.class)
                     .withIgnoreLeadingWhiteSpace(true)
                     .build();
-            // iterator doesn't consume memory
+           
             Iterator<IndiaCensusCSV> iterator = csvToBean.iterator();
             int numOfEntries = 0;
             while (iterator.hasNext()) {
