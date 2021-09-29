@@ -56,6 +56,7 @@ public class CensusAnalyserTest {
 			e.printStackTrace();
 		}
 	}
+	
 
 	@Test
 	public void givenIndianStateCodeCSVFile_WhenLoad_ShouldReturnCorrectRecords() throws Exception {
@@ -64,6 +65,7 @@ public class CensusAnalyserTest {
 		Assert.assertEquals(37, count);
 	}
 
+	
 	@Test
 	public void givenIndianStateCode_WrongCSVFile_WhenLoad_ShouldReturnException() {
 		try {
